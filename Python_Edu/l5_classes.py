@@ -26,10 +26,10 @@ def diamond():
 Um eine Klasse zu erstellen, wird das "class"-keyword verwendet:
         
         class Test():
+            pass
 
 Instanziierung geschieht durch Zuweisung der jeweiligen Klasse.
 
-        class Test():
         test = Test()
 
 Konstruktoren (in Python: Initiatoren), werden durch die __init__()
@@ -85,7 +85,7 @@ den der Elternklasse überschreibt, und dies so dazu führen kann,
 dass Elterneigenschaften für das Objekt überschrieben werden.
 
 Um dies zu verhindern, lässt sich der Elterninitator innerhalb des Kindinitiators 
-aufgerufen werden (entweder durch "super()" oder den Bezeichner der Elternklasse):
+aufrufen (entweder durch "super()" oder den Bezeichner der Elternklasse):
 
         class ElternKlasse():
             def __init__(self, param):

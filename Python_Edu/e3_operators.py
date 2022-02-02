@@ -5,6 +5,8 @@
 Aufgabe 1 (~5 Minuten):
 Schreiben Sie eine Funktion, die alle "Power Of Two" Zahlen bis zu einer Potenz n ausgibt.
 
+also: 2, 4, 8, 16, 32, 64, 128 etc.
+
 """
 def aufgabe_3_1(n: int):
     pass

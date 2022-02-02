@@ -48,5 +48,3 @@ werden gehandlet und führen nicht zu einer Beendigung der Ausführung.
 def create_with_with(doc: str="y1_playground.html"):
     with open(doc,"x") as file:
         file.write("Trexxak was Here")
-
-

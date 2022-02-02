@@ -26,7 +26,7 @@ In aller Kürze:
 
 Collection      Liste[]     Tupel()     Set{}       Dict{}      String
 
-geordnet?           Ja          Ja      Nein            Ja          Ja
+geordnet?           Ja          Ja      Nein           *Ja          Ja
 indiziert?          Ja          Ja      Nein     Schlüssel          Ja
 veränderbar?        Ja        Nein      Nein            Ja        Nein
 doppelte Werte?     Ja          Ja      Nein          Nein          Ja
@@ -152,7 +152,7 @@ def change_collections(data = collections()):
 
     # STRING
     new_data[4][1] = "L"               # String unveränderbar!
-    workaround_string = new_data[4][0]  # WOrkaround: Erstellung eines neuen Strings
+    workaround_string = new_data[4][0]  # Workaround: Erstellung eines neuen Strings
     workaround_string += "L"
     for i in range(2,len(new_data[4])):
         workaround_string += new_data[4][i]

@@ -17,7 +17,7 @@ hier:
 
 """
 def builtin_modules():
-    if plt() == "Windoof":
+    if plt() == "Windows":
         open("https://docs.python.org/3/py-modindex.html")
         print(datetime.now().strftime("Today is %A, %d. of %B, %Y.\nYour local time is %H:%M"))
 
