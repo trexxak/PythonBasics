@@ -50,5 +50,5 @@ importieren Sie es und schreiben Sie ein Minimalprogramm.
 
 """
 def aufgabe_0_3():
-    import random # Ändere "random" zu deinem gewünschten Modulnamen
-    print(f"Du würfelst: {random.randint(1,6)}") # Ändere den Code um das gewünsche Modul zu demonstrieren
+    import random # Ändern Sie "random" zu Ihrem gewünschten Modulnamen
+    print(f"Du würfelst: {random.randint(1,6)}") # Ändern Sie den Code um das gewünsche Modul zu demonstrieren

@@ -114,6 +114,3 @@ def aufgabe_4_3(own_position: tuple = (1,1), free_spaces: tuple = ((0,1),(1,1),(
     map = {}
     display = ""
     print(display)
-
-
-

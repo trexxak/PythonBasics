@@ -3,7 +3,7 @@
 """
 
 Aufgabe 1 (~5 Minuten):
-Schreiben Sie in "y2_playground.txt" den in der Variable "encoded_text" geschriebenen Text.
+Beschreiben Sie "y2_playground.txt" mit dem in der Variable "encoded_text" geschriebenen Text.
 
 """
 def aufgabe_7_1():
@@ -19,20 +19,7 @@ ein Whitespace (Leerzeichen) steht.
 
 """
 def aufgabe_7_2():
-    counter = 0
-    changed_string = ""
-
-    with open("y2_playground.txt","r") as file:
-        string_to_change = file.read()
-    
-    for i in range(len(string_to_change)):
-        changed_string += string_to_change[i]
-        counter +=1
-        if counter % 5 == 0:
-            changed_string += " " 
-
-    with open("y2_playground.txt","w") as file:
-        file.write(changed_string)
+    pass
 
 
 

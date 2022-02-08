@@ -1,7 +1,8 @@
 import typing
 
 ### Python Syntax ###
-def do_nothing(): pass
+def do_nothing(): 
+    pass
 
 
 
@@ -85,14 +86,15 @@ def casting(f = "42"):
 ## Namenskonventionen ##
 """
 
-Folgende Namenskonventionen sind in Python üblich:
+Folgende Namenskonventionen sind für Python üblich:
+
     * PascalCase                Klassen
     * snake_case                Variablen, Funktionen, Methoden, Module
     * SCREAMING_SNAKE_CASE      Konstante
 
 """
 def naming():
-    import this_is_my_module
+    import y0_this_is_my_module
     class ThisIsMyClass:
         def this_is_its_method():
             THIS_IS_A_CONSTANT = 42

@@ -10,11 +10,11 @@ def diamond():
     class Teacher(Human):
         year = 2018
 
-    class Markus(Student, Teacher):
+    class Markus(Teacher, Student):
         pass
-        # t_year = Teacher.year
-        # s_year = Student.year
-        # year = Human.year
+        #t_year = Teacher.year
+        #s_year = Student.year
+        #year = Human.year
     
     print(Markus.year)
 
@@ -44,8 +44,8 @@ Dem self folgende Parameter, können dann an instanziierte Objekte übergeben we
             def __init__(self,param):
                 self.eigenschaft = param
 
-Um die Parameter auch der Eigenschaft des Objekts zu übergeben, 
-muss dies noch deklariert werden (siehe oben).
+Um den Parameter auch der Eigenschaft des Objekts zu übergeben, 
+muss diese noch deklariert werden (siehe oben).
 
 """
 def classes():

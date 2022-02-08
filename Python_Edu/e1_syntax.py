@@ -17,8 +17,7 @@ https://python-reference.readthedocs.io/en/latest/docs/functions/input.html
 
 """
 def aufgabe_1_1():
-    my_name = input("Wie heißen Sie?")
-    print("Hello, " + my_name)
+    pass
     
 
 
@@ -26,7 +25,7 @@ def aufgabe_1_1():
 
 Aufgabe 2 (~10 Minuten): 
 a) Korrigieren Sie die Syntaxfehler der auskommentierten Funktion 
-b) Bringen Sie die Bestandteile in eine verständliche Form (Namenskonventionen).
+b) Bringen Sie die Bestandteile in eine leichter lesbare Form (Namenskonventionen).
 
 #     def AufgabeEinsZweixD(konstante : Int):
 # MEINEVARIABLE = 3.177;
@@ -72,10 +71,3 @@ def aufgabe_1_3():
     ### Ausgabe ###
     for i in range(1, len(list_of_numbers)+1):
         pass
-
-
-
-
-
-
-

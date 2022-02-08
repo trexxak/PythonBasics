@@ -8,7 +8,7 @@ Einsatz von Klassen abstrakt dar.
 
 """
 def aufgabe_5_1():
-    class Pass:
+    class Class():
         pass
 
 

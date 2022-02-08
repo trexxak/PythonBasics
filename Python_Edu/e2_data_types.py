@@ -28,6 +28,7 @@ Also:
             <body>
                 <h1>Überschrift</h1>
                 <p>Lorem Ipsum</p>
+                <img src="testpixel"/>
             </body>
         </html>
 
@@ -35,7 +36,7 @@ Bonus: Fügen Sie unterhalb des Paragraph-Elements eine ungeordnete Liste hinzu.
 
 Doppel-Bonus: Binden Sie zwischen Überschrift und Paragraph ein Bild aus dem Internet ein.
 
-Dreifach-Bonus: Fügen Sie beliebig viele weitere Parameter ein um CSS-Stilelemente zu steuern.
+Dreifach-Bonus: Fügen Sie beliebig viele weitere Parameter ein um CSS-Stilelemente zu bestimmen.
 
 
 """

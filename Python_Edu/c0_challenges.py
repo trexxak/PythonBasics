@@ -27,9 +27,12 @@ Challenge E:
 Schreiben Sie ein Text-Adventure Spiel.
 
 Challenge F:
-Erstellen Sie eine dynamische Webseite mit dem Django-Modul.
+Erstellen Sie eine dynamische Webseite mit dem django-Modul.
 
 Challenge G:
 Erstellen Sie ein Spiel mit dem pygame-Modul.
+
+Challenge H:
+Schreiben Sie einen Twitter Bot mit dem tweepy-Modul.
 
 """

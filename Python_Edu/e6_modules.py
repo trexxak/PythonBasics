@@ -4,7 +4,8 @@
 
 Aufgabe 1 (~5 Minuten):
 Informieren Sie sich über das built-in "datetime"-Modul und lassen Sie sich 
-ein Begrüßungsstring (mit Zeit und/ oder Datum) nach Ihrem Geschmack für den heutigen Tag generieren.
+ein Begrüßungsstring (mit Zeit und/ oder Datum) nach Ihrem Geschmack für den heutigen Tag 
+generieren.
 
 """
 def aufgabe_6_1():
@@ -20,7 +21,7 @@ Aufgabe 2 (~10 Minuten):
 Machen Sie sich das "this_is_my_module"-Modul wahrlich zu IHREM Modul. 
 Je kreativer, desto besser.
 
-Demonstrieren was sie am Modul verändert haben anhand der Funktion.
+Demonstrieren Sie was Sie am Modul verändert haben anhand der Funktion.
 
 """
 def aufgabe_6_2():

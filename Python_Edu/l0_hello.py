@@ -21,17 +21,19 @@ Python wird insbesondere häufig in folgenden Kontexten verwendet:
 
 """
 def what():
-    moeglicheAntworten = ['der Giftschlange',
+    moeglicheAntworten = ['der Würgeschlange',
                         'einem Kofferwort',
-                        'die britische Komikergruppe "Monty Python"',
+                        'der britischen Komikergruppe "Monty Python"',
                         'das Inselvolk der Pythonier']
-    namensUrsprung = moeglicheAntworten  # []
+    namensUrsprung = moeglicheAntworten #[]  
     print(f"Python ist benannt nach {namensUrsprung}!")
 
 
 
 ## Wieso Python? ##
 """
+
+Pythons Vorteile beinhalten unter Anderem:
 
     * Plattformunabhängige Unterstützung
     * Einprägsame Syntax, dadurch auch für Anfänger geeignet
@@ -65,4 +67,3 @@ Hier eine kleine Auswahl der populärsten Möglichkeiten:
 """
 def how():
     os.system("python")
-

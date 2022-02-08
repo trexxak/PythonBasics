@@ -20,6 +20,8 @@ def collections():
     string_example = "ABCDEFGHIJKLMNOPQURSTUVWXYZ0123456789"
     return [tuple_example, list_example, set_example, dict_example, string_example]
 
+
+
 """
 
 In aller Kürze:
@@ -92,9 +94,9 @@ def character_sheet():
 Ordnung und Index:
 
 Aufzählungen können geordnet sein, das heißt die Reihenfolge der Elemente bleibt erhalten.
-Dies erlaubt den Zugriff auf einzelne Elemente durch seinen Index.
-    (Eine Ausnahme stellt hier das Wörterbuch dar, bei dem statt mit Index der Schlüssel gewählt
-    werden muss)
+Dies erlaubt den Zugriff auf einzelne Elemente durch ihren jeweiligen Index.
+    (Eine Ausnahme stellt hier das Wörterbuch dar, bei dem statt dem Index der Schlüssel 
+    gewählt werden muss)
 
 """
 def access_collections(data = collections()):
@@ -106,13 +108,13 @@ def access_collections(data = collections()):
     print(data[1][0])
 
     # SET
-    print(data[2][0])           # nicht geordnet!
+    # print(data[2][0])           # nicht geordnet!
     for item in data[2]:        # Workaround -> Loop und Konditional -> UNPRAKTIKABEL!
         if "Heinrich" == item:
             print(item)
 
     # DICT
-    print(data[3][0])           # nicht indiziert!
+    # print(data[3][0])           # nicht indiziert!
     print(data[3]["Vorname"])   # Lösung -> Schlüssel statt Index angeben!
 
     # STRING
@@ -130,7 +132,7 @@ def change_collections(data = collections()):
     new_data = data.copy()
 
     # TUPLE
-    new_data[0][1] = "Lauch"                 # Tupel unveränderbar!
+    #new_data[0][1] = "Lauch"                 # Tupel unveränderbar!
     workaround_list = list(new_data[0])      # Workaround -> Tupel zu Liste casten
     workaround_list[1] = "Lauch"             # Element ändern
     new_data[0] = tuple(workaround_list)     # Liste zu Tupel casten
@@ -141,7 +143,7 @@ def change_collections(data = collections()):
     print(new_data[1][1])
 
     # SET
-    new_data[2][1] = "Lauch"    # nicht geordnet!
+    #new_data[2][1] = "Lauch"    # nicht geordnet!
     new_data[2].remove("Faust") # Workaround: 
     new_data[2].add("Lauch")    # Entfernen des alten Werts und Hinzufügen des Neuen.
     print(new_data[2])
@@ -151,7 +153,7 @@ def change_collections(data = collections()):
     print(new_data[3][1])
 
     # STRING
-    new_data[4][1] = "L"               # String unveränderbar!
+    #new_data[4][1] = "L"               # String unveränderbar!
     workaround_string = new_data[4][0]  # Workaround: Erstellung eines neuen Strings
     workaround_string += "L"
     for i in range(2,len(new_data[4])):
@@ -164,7 +166,7 @@ def change_collections(data = collections()):
 Redundanztoleranz:
 
 Doppelte Werte werden in allen Aufzählungen erlaubt, 
-jedoch ignorieren Sets doppelte Werte, und Wörterbücher
+jedoch ignorieren Sets doppelte Werte, Wörterbücher
 ignorieren doppelte Schlüssel.
 
 """
@@ -205,7 +207,7 @@ list_a.pop(i)                  entfernt das Item der Liste an Index i.
 list_a.append(item)            fügt das genannte Item am Ende der Liste hinzu.
 list_a.remove(item)            entfernt das genannte Item von der Liste.
 
-list_a = list_one + list_two   kombiniert mehrere Listen.
+list_a = list_one + list_two   kombiniert mehrere Listen zu einer neuen Liste.
 list_a.extend(collection)      fügt Elemente einer weiteren Collection am Ende der Liste hinzu.
 
 list_a.count("#")              gibt das Auftreten des angegebenen Werts in der Liste an.
@@ -284,7 +286,7 @@ def set_functions(set_a = {1,2,3,4,5}, set_b = {3,4,5,6,7}):
 Nützliche Funktionen für Wörterbücher:
 
 dict_a["key"] = new_value               weist dem Wörterbuchschlüssel einen (neuen) Wert zu.
-dict_a.update({"key": new_value})       fügt dem Wörterbuch hinzu (oder ändert) ein Schlüssel-Wert Paar.
+dict_a.update({"key": new_value})       fügt dem Wörterbuch ein Schlüssel-Wert Paar hinzu oder ändert es.
 
 dict_a = dict_b.copy()                  weist dem Wörterbuch eine Kopie eines anderen Wörterbuchs zu.                  
 dict_a.pop("key")                       entfernt den Schlüssel (und zugehörige Werte) aus dem Wörterbuch.

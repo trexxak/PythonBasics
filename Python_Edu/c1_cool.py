@@ -28,3 +28,5 @@ def comparison_chaining():
     if 1 < x > -1:
         print(x)
 
+def fast_sqrt(x):
+    return x ** .5

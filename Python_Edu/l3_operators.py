@@ -1,4 +1,7 @@
 ### Python Operatoren ###
+from ast import operator
+
+
 operator_chain = 1 < 2 < 3 < 4 < 5 > 4 > 3 > 2 > 1 >= 0 <= 1
 
 
@@ -12,7 +15,7 @@ operator_chain = 1 < 2 < 3 < 4 < 5 > 4 > 3 > 2 > 1 >= 0 <= 1
     /   Division (wie immer mit Vorsicht zu genießen!)
     %   Modulo
     **  Exponential
-    //  Wurzel
+    //  Bodenteilung (NICHT Wurzel!)
 
 """
 def calculus(zahl_1, zahl_2, operator):
@@ -46,7 +49,7 @@ def calculus(zahl_1, zahl_2, operator):
     x /= 4      weist der Variable ihren um den rechten Wert dividierten Wert zu.
     x %= 5      weist der Variable ihren um den rechten Wert modulierten Wert zu.
     x **= 6     weist der Variable ihren um den rechten Wert potenzierten Wert zu.
-    x //= 7     weist der Variable ihren um den rechten Wert wurzelgezogenen Wert zu.
+    x //= 7     weist der Variable ihren um den rechten Wert bodengeteilten Wert zu.
 
 """
 def count_up_then_down():
@@ -55,7 +58,7 @@ def count_up_then_down():
             i+=1
         print(i)
     for j in range(9999,0,-1):
-        if j >0:
+        if j > 0:
             j-=1
         print(j)
 
@@ -127,3 +130,20 @@ def numbered_list(itemlist = ["Collect underpants", "?", "Profit"]):
     for item in itemlist:
         counter += 1
         print(f"Phase {counter}:\t{item}\n")
+
+## Bitwise Operatoren ##
+"""
+
+    &   AND     Setzt jeden Bit auf 1, wenn beide Bits 1 sind.
+
+    |   OR      Setzt jeden Bit auf 1, wenn mindestens ein Bit 1 ist.
+
+    ^   XOR     Setzt jeden Bit auf 1, wenn NUR ein Bit 1 ist.
+    
+    ~   NOT     Invertiert alle Bits
+
+    <<  Left Shift
+    
+    >>  Right Shift
+
+"""

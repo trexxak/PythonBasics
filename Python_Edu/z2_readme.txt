@@ -9,5 +9,5 @@
             y           Diverse Lernmaterialien
             z           Feedback, To-Do's und readme
 
-Prototyp Python Unterrichtsmaterial 26.01.2022. 
+Python Unterrichtsmaterial 08.02.2022. 
 Bei Unklarheiten und Fehlern bitte Herrn Machat anschreiben! =)

@@ -3,7 +3,8 @@
 """
 
 Aufgabe 1 (~5 Minuten):
-Schreiben Sie eine Funktion, die alle "Power Of Two" Zahlen bis zu einer Potenz n ausgibt.
+Schreiben Sie eine Funktion, die alle "Power Of Two" (Zweierpotenz) Zahlen bis 
+zu einer Potenz n ausgibt.
 
 also: 2, 4, 8, 16, 32, 64, 128 etc.
 
@@ -16,8 +17,8 @@ def aufgabe_3_1(n: int):
 """
 
 Aufgabe 2 (~10 Minuten):
-Schreiben Sie eine Funktion, die einen übergebenen Ganzzahlparamater darauf überprüft, ob sie
-eine "Power of Two"-Zahl darstellt, sie also das Ergebnis einer 
+Schreiben Sie eine Funktion, die einen übergebenen Ganzzahlparamater darauf überprüft, 
+ob er eine "Power of Two"-Zahl darstellt, die Zahl also das Ergebnis einer 
 beliebigen Ganzzahl potenziert mit 2 ist.
 
 

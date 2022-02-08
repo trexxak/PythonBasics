@@ -11,4 +11,4 @@ def dummy_function():
 if __name__ == "__main__":
     print_if_main()
 else:
-    print_if_not_main()
+    print_if_not_main(True)

@@ -81,10 +81,11 @@ def casting_fails():
 """
 
 Merkmale:
+
     * Strings werden durch "" oder '' markiert (jedoch nicht gemischt - "string' wird nicht erkannt).
     * Strings in Python sind implizit Abfolgen einzelner Zeichen, die jedoch ebenfalls als String gespeichert sind.
     * Verbatim Strings können durch dreifache doppelte Anführungszeichen markiert werden. 
-    * Konkatenation zwischen Strings erfolgt durch den '+'-Operator.
+    * Verkettung zwischen Strings erfolgt durch den '+'-Operator.
     * Strings können entweder durch die "format()"-Methode oder durch f-String formatiert werden.
 
 """
@@ -163,30 +164,30 @@ def formatted_string():
 
 Nützliche String-Methoden:
 
-    * length = len(my_string)
+    length = len(my_string)
         Gibt die Länge der Zeichenkette zurück.
 
-    * if "abc" in my_string:
+    if "abc" in my_string:
         Prüft das Vorkommen des Substrings "abc" in my_string.
 
-    * new_string = my_string[2-8]
+    new_string = my_string[2-8]
         Gibt einen neuen String startend mit Index 2 und endend
         mit Index 8 des alten Strings zurück.
 
-    * new_string = my_string.upper()
+    new_string = my_string.upper()
         Gibt den String in GROßSCHRIFT zurück.
 
-    * new_string = my_string.lower()
+    new_string = my_string.lower()
         Gibt den String in kleinschrift zurück.
 
-    * new_string = "ANANAS".replace("NA","P")
+    new_string = "ANANAS".replace("NA","P")
         ersetzt vorkommende "NA"-Substrings mit "P".
     
-    * book_info = "1984, George Orwell, Dystopie".split(",")
+    book_info = "1984, George Orwell, Dystopie".split(",")
         Gibt eine durch "," gekennzeichnete Liste an Substrings zurück.
         (also: ["1984", " George Orwell", " Dystopie"])
     
-    * clear_string = " Hallo Welt ".strip()
+    clear_string = " Hallo Welt ".strip()
         Entfernt Whitespaces vor und hinter einer Zeichenkette.
         (also: "Hallo Welt")
 
@@ -223,12 +224,12 @@ Escape-Sequenzen möglich:
     * \t    Tabulator
     * \b    Backspace                       Beispiel: "A\bBCD" -> "BCD"
     * \f    "Form Feed", nächste Seite      obsolet!
-    * \000  Oktalwert                       000 steht hier für Ziffern von 0-9
+    * \000  Oktalwert                       000 steht hier für Ziffern von 0-7
     * \x00  Hexadezimalwert                 x gefolgt von zwei Hexadezimalziffer 0-F
 
 """
 def escape_sequences():
-    print("C:\\Users\\Admin\\FilmQuotes\\TheRoom_2003.mp4\b\b\b\b    ")
+    print("C:\\Users\\Admin\\FilmQuotes\\TheRoom_2003.mp4\b\b\b\b.avi")
     print("Tommy: \"Ha\tha\tha\tha. \n\tWhat \ta \tstory \tMark!\"")
 
 
@@ -239,20 +240,20 @@ def escape_sequences():
     Die meisten Werte korrelieren mit dem Wahrheitswert "True".
 
     Ausnahmen: 
-        * False     ist Falsch  Boolscher Wert
-        * None      ist None    Boolscher Wert
-        * 0         ist None    Ganzzahl
-        * ""        ist None    String
-        * ()        ist None    Tupel
-        * []        ist None    Liste
-        * {}        ist None    Set oder Wörterbuch
+        False     ist Falsch  Boolscher Wert
+        None      ist None    Boolscher Wert
+        0         ist None    Ganzzahl
+        ""        ist None    String
+        ()        ist None    Tupel
+        []        ist None    Liste
+        {}        ist None    Set oder Wörterbuch
 
 """
 def check_bool_value(parameter):
-    if parameter:
+    argument = parameter
+    if argument:
         return True
-    elif parameter is False:
+    elif argument is False:
         return False
-    elif parameter is None:
+    elif argument is None:
         return None
-

@@ -1,4 +1,6 @@
-### Dateibearbeitung ### 
+### Dateibearbeitung ###
+with open("z1_todo.txt") as file:
+    print(file.read())
 
 
 
@@ -19,8 +21,6 @@ Ein mit "x", "w" und "a" geöffnetes Dokument, kann durch write(string) beschrie
 Um ein Dokument zu löschen muss das "os"-Modul importiert und seine remove() Funktion
 ausgeführt werden. 
 
-
-
 """
 def read_and_return(doc) -> str:
     f = open(doc)
@@ -36,6 +36,8 @@ def write_in_mode(mode, doc, string):
 def delete_doc(doc):
     import os
     os.remove(doc)
+
+
 
 """
 

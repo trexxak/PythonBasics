@@ -102,8 +102,10 @@ def aufgabe_2_2(title, heading, paragraph, list, image_url):
 
 
 
-def aufgabe_2_3(html_page: str):    
-    list_of_elements = html_page.split("<img") 
+def aufgabe_2_3(html_page: str):
+
+    list_of_elements = html_page.split("<img")
+    print(list_of_elements) 
     for item in list_of_elements:
         if "src" in item: 
             pic = item.split(">")
@@ -112,7 +114,7 @@ def aufgabe_2_3(html_page: str):
 
 
 def aufgabe_3_1(n: int):
-    for i in range(0,n):
+    for i in range(0,n+1):
         result = 2**i
         print(f"Potenz{i}:\t2^{i}\t{result}")
 

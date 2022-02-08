@@ -28,7 +28,7 @@ def builtin_modules():
 
 Module sind nichts weiter als Python Skripte. Das bedeutet also um eigene Python Skripte
 als Module zu laden ist es ausreichend, wenn das gewünschte Modul im selben Ordner
-vorliegt. Dann kann das Modul wie herkömmlich importiert werden.
+vorliegt. So kann das Skript dann wie ein Modul importiert werden.
 
 """
 def own_modules():
