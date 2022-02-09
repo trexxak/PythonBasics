@@ -76,9 +76,15 @@ def aufgabe_2_1(string):
 
 
 
-def aufgabe_2_2(title, heading, paragraph, list, image_url):    
+def aufgabe_2_2(title, heading, paragraph, list, image_url, *style):
+    
+    style_string = ""
+    for arg in style:
+        style_string += arg
+    
+    style_content = f"<style>{style_string}</style>"    
     head_content = f"<title>{title}</title>\n"
-    html_head = f"<head>\n{head_content}\n</head>\n"
+    html_head = f"<head>\n{head_content}{style_content}\n</head>\n"
     body_content = f"<h1>{heading}</h1>\n"
 
     body_content += f'<img src="{image_url}">\n'
@@ -94,11 +100,23 @@ def aufgabe_2_2(title, heading, paragraph, list, image_url):
     full_html = "<!DOCTYPE html>\n<html>\n"+html_head+html_body+"\n</html>"
     return full_html
     import webbrowser
-    html=aufgabe_2_2("Trexxak's lustige Seite","Was macht der so?","Meist nicht viel:",["Programmieren","Schlafen","Kaffee trinken"],"https://static.jam.vg/raw/98b/d2/z/486c8.png")
+
+    html=aufgabe_2_2("Trexxak's lustige Seite",
+            "Was macht der so?",
+            "Meist nicht viel:",
+            ["Programmieren","Schlafen","Kaffee trinken"],
+            "https://static.jam.vg/raw/98b/d2/z/486c8.png",
+            "h1{color: #63897a; font-size: 64px}",
+            "p{color: #a0dec5; background-color: #82b3a0; font-size: 52px}",
+            "ul{color: #63897a; list-style-type: none; margin: 0; padding: 0;}",
+            "li{font-size: 32px;}"
+            "body{font-family: Papyrus; color: #63897a; text-align: center; background-color: #a0dec5}")
+
     f = open("y1_playground.html", "w")
     f.write(html)
     f.close()
-    webbrowser.open("trexxak.html")    
+
+    webbrowser.open("y1_playground.html")
 
 
 
@@ -413,7 +431,7 @@ def aufgabe_6_3():
 
 
 def aufgabe_7_1():
-    encoded_text = "ohssvcvthuklyluluklklzbualyypjoazwyvglzzlz!pjozpagloplybukklurlüilyilzvuklyzkbttlalealuhjo!pjoohiltpynlmüosaqlklusvyltpwzbtnlulyhavyptulaghunlzjohbabukipugbtzjosbzznlrvttlu!khzzpjokvjosplilyzlsizalpulubuzpuuzaleazjoylpil!"
+    encoded_text = "ohssvcvthuklyluluklklzbualyypjoazwyvglzzlzpjozpagloplybukklurlblilyilzvuklyzkbttlalealuhjopjoohiltpynlmblosaqlklusvyltpwzbtnlulyhavyptulaghunlzjohbabukipugbtzjosbzznlrvttlukhzzpjokvjosplilyzlsizalpulubuzpuuzaleazjoylpil"
     with open("y2_playground.txt","w") as file:
         file.write(encoded_text)
 
@@ -438,4 +456,12 @@ def aufgabe_7_2():
 
 
 def aufgabe_7_3():
-    print("nyi")
+    with open("y2_playground.txt","r") as file:
+        string_to_change = file.read()
+    temp_string = string_to_change.replace(" ","")
+    final_string = ""
+    for i in range(len(temp_string)):
+        char = temp_string[i]
+        final_string += chr((ord(char) -7 - 97) % 26 + 97)
+    with open("y2_playground.txt","w") as file:
+        file.write(final_string)

@@ -99,26 +99,31 @@ Dies erlaubt den Zugriff auf einzelne Elemente durch ihren jeweiligen Index.
     gewählt werden muss)
 
 """
-def access_collections(data = collections()):
-    
+def access_collections():
+    tuple_example = ("Winston", "Smith", 52, True)
+    list_example = ["Josef", "K.", 46, False]
+    set_example = {"Heinrich", "Faust", 72, None}
+    dict_example = {"Vorname": "Arthur", "Nachname": "Dent", "Alter": 42, "Lebt": True}
+    string_example = "ABCDEFGHIJKLMNOPQURSTUVWXYZ0123456789"
+
     # TUPLE
-    print(data[0][0])
+    print(tuple_example[0])
 
     # LIST
-    print(data[1][0])
+    print(list_example[0])
 
     # SET
-    # print(data[2][0])           # nicht geordnet!
-    for item in data[2]:        # Workaround -> Loop und Konditional -> UNPRAKTIKABEL!
+    # print(set_example[0])           # nicht geordnet!
+    for item in set_example:        # Workaround -> Loop und Konditional -> UNPRAKTIKABEL!
         if "Heinrich" == item:
             print(item)
 
     # DICT
-    # print(data[3][0])           # nicht indiziert!
-    print(data[3]["Vorname"])   # Lösung -> Schlüssel statt Index angeben!
+    # print(dict_example[0])           # nicht indiziert!
+    print(dict_example["Vorname"])   # Lösung -> Schlüssel statt Index angeben!
 
     # STRING
-    print(data[4][0])
+    print(string_example[0])
 
 """
 
@@ -129,37 +134,41 @@ Aufnahme nicht mehr veränderbar.
 
 """
 def change_collections(data = collections()):
-    new_data = data.copy()
+    tuple_example = ("Winston", "Smith", 52, True)
+    list_example = ["Josef", "K.", 46, False]
+    set_example = {"Heinrich", "Faust", 72, None}
+    dict_example = {"Vorname": "Arthur", "Nachname": "Dent", "Alter": 42, "Lebt": True}
+    string_example = "ABCDEFGHIJKLMNOPQURSTUVWXYZ0123456789"
 
     # TUPLE
-    #new_data[0][1] = "Lauch"                 # Tupel unveränderbar!
-    workaround_list = list(new_data[0])      # Workaround -> Tupel zu Liste casten
-    workaround_list[1] = "Lauch"             # Element ändern
-    new_data[0] = tuple(workaround_list)     # Liste zu Tupel casten
-    print(new_data[0][1])
+    #tuple_example[1] = "Lauch"                 # Tupel unveränderbar!
+    workaround_list = list(tuple_example)       # Workaround -> Tupel zu Liste casten
+    workaround_list[1] = "Lauch"                # Element ändern
+    tuple_example = tuple(workaround_list)      # Liste zu Tupel casten
+    print(tuple_example[1])
     
     # LISTE
-    new_data[1][1] = "Lauch"
-    print(new_data[1][1])
+    list_example[1] = "Lauch"
+    print(list_example[1])
 
     # SET
-    #new_data[2][1] = "Lauch"    # nicht geordnet!
-    new_data[2].remove("Faust") # Workaround: 
-    new_data[2].add("Lauch")    # Entfernen des alten Werts und Hinzufügen des Neuen.
-    print(new_data[2])
+    #set_example[1] = "Lauch"                   # nicht geordnet!
+    set_example.remove("Faust")                 # Workaround: 
+    set_example.add("Lauch")                    # Entfernen des alten Werts und 
+    print(set_example)                          # Hinzufügen des Neuen.
 
     # DICT
-    new_data[3][1] = "Lauch"
-    print(new_data[3][1])
+    dict_example["Nachname"] = "Lauch"
+    print(dict_example["Nachname"])
 
     # STRING
-    #new_data[4][1] = "L"               # String unveränderbar!
-    workaround_string = new_data[4][0]  # Workaround: Erstellung eines neuen Strings
+    #string_example[1] = "L"                       # String unveränderbar!
+    workaround_string = string_example[0]          # Workaround: Erstellung eines neuen Strings
     workaround_string += "L"
-    for i in range(2,len(new_data[4])):
-        workaround_string += new_data[4][i]
-    new_data[4] = workaround_string
-    print(new_data[4][1])
+    for i in range(2,len(string_example)):
+        workaround_string += string_example[i]
+    string_example = workaround_string
+    print(string_example[1])
 
 """
 
@@ -171,15 +180,19 @@ ignorieren doppelte Schlüssel.
 
 """
 def duplicates_in_collections():
+
     # TUPLE
     tuple_example = ("A","N","A","N","A","S")
     print(tuple_example)
+
     # LIST
     list_example = ["A","N","A","N","A","S"]
     print(list_example)
+    
     # SET
     set_example = {"A","N","A","N","A","S"}
     print(set_example)
+
     # DICT
     dict_example = {"A": 0,
                     "N": 1,
@@ -188,6 +201,7 @@ def duplicates_in_collections():
                     "A": 4,
                     "S": 5}
     print(dict_example)
+    
     # STRING
     string_example = "ananas"
     print(string_example)

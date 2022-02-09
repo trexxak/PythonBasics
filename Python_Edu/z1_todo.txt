@@ -1,4 +1,1 @@
-- Vorwort 
-- data type Beispiele ändern
-- 7.3 lösen
-- 2.2C lösen
+- Vorwort/ Hilfe
