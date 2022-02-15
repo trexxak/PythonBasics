@@ -15,7 +15,7 @@ operator_chain = 1 < 2 < 3 < 4 < 5 > 4 > 3 > 2 > 1 >= 0 <= 1
     /   Division (wie immer mit Vorsicht zu genießen!)
     %   Modulo
     **  Exponential
-    //  Bodenteilung (NICHT Wurzel!)
+    //  "Floor Division" (NICHT Wurzel!)
 
 """
 def calculus(zahl_1, zahl_2, operator):

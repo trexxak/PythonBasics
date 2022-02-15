@@ -127,7 +127,7 @@ def access_collections():
 
 """
 
-Veränderbarkeit ("Immutability"):
+Veränderbarkeit ("Mutability"):
 
 Bis auf die Liste und das Dictionary, sind einzelne Elemente innerhalb der Aufzählung nach
 Aufnahme nicht mehr veränderbar.
