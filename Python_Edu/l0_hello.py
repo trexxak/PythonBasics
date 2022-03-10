@@ -63,6 +63,7 @@ Hier eine kleine Auswahl der populärsten Möglichkeiten:
     * PyCharm
     * Sublime
     * Eclipse mit PyDev
+    * Anaconda
 
 """
 def how():

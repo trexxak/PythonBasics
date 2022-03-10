@@ -258,7 +258,7 @@ tuple_a.count(item)     gibt den Zählwert des vorgekommenen Wertes zurück.
 a,b,c = tuple_a         entpackt die kommagetrennten Variablen in einen Tupel.
 
 """
-def tupel_functions(*tuple_a):
+def tuple_functions(*tuple_a):
     a,b,c,d = tuple_a
     [print(item) for item in tuple_a]
     print(tuple_a)

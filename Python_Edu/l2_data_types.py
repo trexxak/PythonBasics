@@ -82,11 +82,14 @@ def casting_fails():
 
 Merkmale:
 
-    * Strings werden durch "" oder '' markiert (jedoch nicht gemischt - "string' wird nicht erkannt).
-    * Strings in Python sind implizit Abfolgen einzelner Zeichen, die jedoch ebenfalls als String gespeichert sind.
+    * Strings werden durch "" oder '' markiert 
+        (jedoch nicht gemischt - "string' wird nicht erkannt).
+    * Strings in Python sind implizit Abfolgen einzelner Zeichen, 
+        die jedoch ebenfalls als String gespeichert sind.
     * Verbatim Strings können durch dreifache doppelte Anführungszeichen markiert werden. 
     * Verkettung zwischen Strings erfolgt durch den '+'-Operator.
-    * Strings können entweder durch die "format()"-Methode oder durch f-String formatiert werden.
+    * Strings können entweder durch die "format()"-Methode oder 
+        durch f-String formatiert werden.
 
 """
 def vertical_string(string: str = "What is the airspeed velocity of an unladen 'swallow'?"):
@@ -184,7 +187,7 @@ Nützliche String-Methoden:
         ersetzt vorkommende "NA"-Substrings mit "P".
     
     book_info = "1984, George Orwell, Dystopie".split(",")
-        Gibt eine durch "," gekennzeichnete Liste an Substrings zurück.
+        Gibt eine am ","-Zeichen separierte Liste an Substrings zurück.
         (also: ["1984", " George Orwell", " Dystopie"])
     
     clear_string = " Hallo Welt ".strip()
@@ -224,7 +227,7 @@ Escape-Sequenzen möglich:
     * \t    Tabulator
     * \b    Backspace                       Beispiel: "A\bBCD" -> "BCD"
     * \f    "Form Feed", nächste Seite      obsolet!
-    * \000  Oktalwert                       000 steht hier für Ziffern von 0-7
+    * \000  Oktalwert                       0 steht hier für Ziffern von 0-7
     * \x00  Hexadezimalwert                 x gefolgt von zwei Hexadezimalziffer 0-F
 
 """

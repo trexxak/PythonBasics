@@ -49,7 +49,7 @@ def aufgabe_2_2(title, heading, paragraph):
 """
 
 Aufgabe 3 (~15 Minuten):
-Schreiben Sie einen HTML-Parser, der die eingebundenen Bilder eines HTML-Strings in einer Liste
+Schreiben Sie einen HTML-Parser, der die eingebundenen Bilder einer HTML-Seite in einer Liste
 zurückgibt.
 
 """

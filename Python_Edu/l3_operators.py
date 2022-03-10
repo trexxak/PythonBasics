@@ -1,7 +1,4 @@
 ### Python Operatoren ###
-from ast import operator
-
-
 operator_chain = 1 < 2 < 3 < 4 < 5 > 4 > 3 > 2 > 1 >= 0 <= 1
 
 
@@ -130,6 +127,8 @@ def numbered_list(itemlist = ["Collect underpants", "?", "Profit"]):
     for item in itemlist:
         counter += 1
         print(f"Phase {counter}:\t{item}\n")
+
+
 
 ## Bitwise Operatoren ##
 """
