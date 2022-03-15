@@ -18,7 +18,7 @@ https://python-reference.readthedocs.io/en/latest/docs/functions/input.html
 """
 def aufgabe_1_1():
     pass
-    
+
 
 
 """

@@ -25,7 +25,7 @@ def what():
                         'einem Kofferwort',
                         'der britischen Komikergruppe "Monty Python"',
                         'das Inselvolk der Pythonier']
-    namensUrsprung = moeglicheAntworten #[]  
+    namensUrsprung = moeglicheAntworten[2]  
     print(f"Python ist benannt nach {namensUrsprung}!")
 
 

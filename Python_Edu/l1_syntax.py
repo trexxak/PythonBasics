@@ -1,5 +1,3 @@
-import typing
-
 ### Python Syntax ###
 def do_nothing(): 
     pass
@@ -45,7 +43,6 @@ def variables(n = 42):
     return [n,i,c,e]
 
 
-
 ## Type Hints ##
 """
 
@@ -55,7 +52,7 @@ komplexeren Programmen. Type Hints sind in jedem Fall optional, können aber abh
 von der gewählten Entwicklungsumgebung das Coden vereinfachen.
 
 """
-def type_hints(n: int = 42) -> list[typing.Any]:
+def type_hints(n: int = 42) -> list:
     i: str = "Hamstervater"
     c: float = 3.14159
     e: bool = False

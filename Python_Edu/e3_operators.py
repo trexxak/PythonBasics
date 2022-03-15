@@ -17,7 +17,7 @@ def aufgabe_3_1(n: int):
 """
 
 Aufgabe 2 (~10 Minuten):
-Schreiben Sie eine Funktion, die einen übergebenen Ganzzahlparamater darauf überprüft, 
+Schreiben Sie eine Funktion, die einen übergebenen Ganzzahlparameter darauf überprüft, 
 ob er eine "Power of Two"-Zahl darstellt, die Zahl also das Ergebnis einer 
 beliebigen Ganzzahl potenziert mit 2 ist.
 

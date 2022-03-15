@@ -12,7 +12,7 @@ operator_chain = 1 < 2 < 3 < 4 < 5 > 4 > 3 > 2 > 1 >= 0 <= 1
     /   Division (wie immer mit Vorsicht zu genießen!)
     %   Modulo
     **  Exponential
-    //  "Floor Division" (NICHT Wurzel!)
+    //  "Floor Division" (NICHT Wurzel!) (Ganzzahlteilung)
 
 """
 def calculus(zahl_1, zahl_2, operator):
@@ -106,7 +106,7 @@ def collision_detection(entity_position = {"x": 0, "y": 0}, wall_position = {"x"
     is      ist wahr, wenn sich beide Variablen auf dasselbe Objekt beziehen.
     is not  ist wahr, wenn sich beide Variablen nicht auf dasselbe Objekt beziehen.
 
-    Hinweis: Boolsche Werte werden mit Identitätsoperatoren überprüft.
+    (Hinweis: Boolsche Werte werden mit Identitätsoperatoren überprüft.)
 
 """
 def collision_handler(entity_is_ghost = True):
