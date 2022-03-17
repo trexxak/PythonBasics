@@ -49,6 +49,7 @@ Dies geschieht über die Shell/ Bash über den Befehl:
 Das Paket wird (wenn nicht virtuelle Umgebungen verwendet werden) im Directory 
 "/lib/site-packages" des Python Ordners gespeichert.              
 
+#py -m pip install -> workaround
 """
 def external_modules():
     import numpy as np

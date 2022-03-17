@@ -7,7 +7,7 @@ def multi_input():
         print(word)
 
 def ternary_bool():
-    x,y = ("Wahr", "Falsch"),1
+    x,y = ("Wahr", "Falsch"),0
     print((x[0],x[1])[y])
 
 def fast_swap():
