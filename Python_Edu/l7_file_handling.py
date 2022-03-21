@@ -18,6 +18,9 @@ Ein mit "r" geöffnetes Dokument, kann durch read() (und andere Methoden) gelese
 
 Ein mit "x", "w" und "a" geöffnetes Dokument, kann durch write(string) beschrieben werden.
 
+Das zweite Argument des Filestreams kann "t" für text oder "b" für binary darstellen. Hierbei
+ist "t" der default-Wert und muss deswegen nicht angeführt werden.
+
 Um ein Dokument zu löschen muss das "os"-Modul importiert und seine remove() Funktion
 ausgeführt werden. 
 
@@ -37,7 +40,26 @@ def delete_doc(doc):
     import os
     os.remove(doc)
 
+"""
+Häufig ist sowohl Lese- als auch Schreibberechtigung bei dem Bearbeiten von Dateien erwünscht.
+Um das gewünschte Verhalten zu erreichen sind folgende Argument"kombinationen" möglich:
 
+    r+      Datei Lesen und überschreibend erweitern.
+
+        -> Fehlerrückgabe falls Datei nicht vorhanden.  
+        -> Der "Cursor" wird an den Anfang des Dokumentes platziert.
+
+    w+      Datei überschreiben und Lesen.
+
+        -> Erstellt neue Datei falls nicht vorhanden.
+        -> Überschreibt neue Datei falls vorhanden.
+
+    a+      Date erweitern und Lesen.
+
+        -> Erstellt neue Datei falls nicht vorhanden.
+        -> Der "Cursor" wird an das Ende des Dokumentes platziert.
+    
+"""
 
 """
 
