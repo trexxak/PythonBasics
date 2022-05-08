@@ -47,17 +47,17 @@ Um das gewünschte Verhalten zu erreichen sind folgende Argument"kombinationen" 
     r+      Datei Lesen und überschreibend erweitern.
 
         -> Fehlerrückgabe falls Datei nicht vorhanden.  
-        -> Der "Cursor" wird an den Anfang des Dokumentes platziert.
+        -> Der "Cursor" wird an den Anfang des Dokuments platziert.
 
     w+      Datei überschreiben und Lesen.
 
         -> Erstellt neue Datei falls nicht vorhanden.
         -> Überschreibt neue Datei falls vorhanden.
 
-    a+      Date erweitern und Lesen.
+    a+      Datei erweitern und Lesen.
 
         -> Erstellt neue Datei falls nicht vorhanden.
-        -> Der "Cursor" wird an das Ende des Dokumentes platziert.
+        -> Der "Cursor" wird an das Ende des Dokuments platziert.
     
 """
 
