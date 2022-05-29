@@ -8,7 +8,7 @@ Sie ihre Interpretation des Codes der Variable "antwort" zu.
 
 """
 def aufgabe_4_1(**kwargs):
-    [kwargs.update({f"{i} + {i} =": i+i}) if i % 2 == 0 else kwargs.update({f"{i} - {i} =": i*-i}) for i in range(10)]
+    [kwargs.update({f"{i} + {i} =": i+i}) if i % 2 == 0 else kwargs.update({f"{i} * -{i} =": i*-i}) for i in range(10)]
     antwort = """  """
     print(antwort)
     return kwargs
