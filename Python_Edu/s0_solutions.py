@@ -1,44 +1,57 @@
 def aufgabe_0_1():
+
     stichwort_1 = "Anpassungsfähigkeit"
+
     stichwort_2 = "Unterschiedlicher Nutzen"
+
     stichwort_3 = "Abstraktes Denken trainieren"
+
     stichwort_4 = "Marktnachfrage"
+
     stichwort_5 = "Persönliche Präferenz entdecken"
+
     return f"Gründe mehr als nur eine Programmiersprache zu lernen:\n\t*{stichwort_1}\n\t*{stichwort_2}\n\t*{stichwort_3}\n\t*{stichwort_4}\n\t*{stichwort_5}\n\n"
 
-
-
 def aufgabe_0_2():
+
     unterschied_1 = "Python lässt sich mit weniger Aufwand schreiben"
     gruende_unterschied_1 = ["Python ist eine Skriptsprache", "C# ist eine kompilierte Sprache", "Pythons Ursprung liegt in funktionaler Programmierung"]
+
     unterschied_2 = "Python ist einfacher zu lesen"
     gruende_unterschied_2 = ["Pythons Syntaxkonzeption beruht auf Englisch", "C# entstammt älteren Programmiersprachen", "Wegfall von '{}' und ';'"]
 
     antwort = "Der erste Unterschied zu C#: "+unterschied_1+"\n"
     for i in range(len(gruende_unterschied_1)):
         antwort += f"\tGrund {i+1}: "+gruende_unterschied_1[i]+"\n"
+
     antwort += "\n" + "Der zweite Unterschied zu C#: " + unterschied_2 + "\n"
     for i in range(len(gruende_unterschied_2)):
         antwort += f"\tGrund {i+1}: "+gruende_unterschied_2[i]+"\n"
 
     return antwort
 
-
-
 def aufgabe_0_3():
-    import pygame
-    pygame.init()
-    surface = pygame.display.set_mode((256, 256))
-    surface.fill((255,0,255))
-    pygame.display.flip()
+    anwendungen = {
+
+        "Automatisierung von Aufgaben": "Python ist ideal für die Automatisierung von Routineaufgaben, da es in der Lage ist, sich mit anderen Anwendungen zu verbinden.",
+
+        "Webentwicklung": "Python ist in der Webentwicklung weit verbreitet und wird häufig verwendet, um Webanwendungen zu entwickeln.",
+
+        "Datenanalyse und -visualisierung": "Python bietet eine Vielzahl von Bibliotheken, um Daten zu analysieren und zu visualisieren, wie zum Beispiel Pandas und Matplotlib.",
+
+        "Künstliche Intelligenz und maschinelles Lernen": "Python ist die bevorzugte Sprache für KI- und ML-Entwickler aufgrund seiner einfachen Syntax und der Verfügbarkeit von Bibliotheken wie TensorFlow und Keras.",
+
+        "Spielentwicklung": "Python bietet verschiedene Bibliotheken und Frameworks wie Pygame, um 2D- und 3D-Spiele zu entwickeln.",
+    }
+
+    for anwendung, begruendung in anwendungen.items():
+        print(f"{anwendung}: {begruendung}")
 
 
 
 def aufgabe_1_1():
-    my_name = input()
-    print("Hello" + my_name)
-
-
+    my_name = input("Geben Sie Ihren Namen ein:\t")
+    print("Hello " + my_name)
 
 def aufgabe_1_2(variable: int):
     MY_CONSTANT = 3.177
@@ -48,8 +61,6 @@ def aufgabe_1_2(variable: int):
     else:
         my_bool = False
     print(my_bool)
-
-
 
 def aufgabe_1_3():
 
@@ -69,12 +80,11 @@ def aufgabe_1_3():
 
 
 
+
 def aufgabe_2_1(string):
     my_string = string
     for char in my_string:
         print(char)
-
-
 
 def aufgabe_2_2(title, heading, paragraph, list, image_url, *style):
     
@@ -99,26 +109,27 @@ def aufgabe_2_2(title, heading, paragraph, list, image_url, *style):
     html_body = f"<body>\n{body_content}\n</body>"
     full_html = "<!DOCTYPE html>\n<html>\n"+html_head+html_body+"\n</html>"
     return full_html
-    import webbrowser
 
-    html=aufgabe_2_2("Trexxak's lustige Seite",
-            "Was macht der so?",
-            "Meist nicht viel:",
-            ["Programmieren","Schlafen","Kaffee trinken"],
-            "https://static.jam.vg/raw/98b/d2/z/486c8.png",
-            "h1{color: #63897a; font-size: 64px}",
-            "p{color: #a0dec5; background-color: #82b3a0; font-size: 52px}",
-            "ul{color: #63897a; list-style-type: none; margin: 0; padding: 0;}",
-            "li{font-size: 32px;}"
-            "body{font-family: Papyrus; color: #63897a; text-align: center; background-color: #a0dec5}")
+# print(aufgabe_2_2("Titel", "Heading", "Lorem Ipsum", ["eins","zwei","drei"],"image.png","abc"))
 
-    f = open("y1_playground.html", "w")
-    f.write(html)
-    f.close()
+# import webbrowser
 
-    webbrowser.open("y1_playground.html")
+# html=aufgabe_2_2("Trexxak's lustige Seite",
+#         "Was macht der so?",
+#         "Meist nicht viel:",
+#         ["Programmieren","Schlafen","Kaffee trinken"],
+#         "https://static.jam.vg/raw/98b/d2/z/486c8.png",
+#         "h1{color: #63897a; font-size: 64px}",
+#         "p{color: #a0dec5; background-color: #82b3a0; font-size: 52px}",
+#         "ul{color: #63897a; list-style-type: none; margin: 0; padding: 0;}",
+#         "li{font-size: 32px;}"
+#         "body{font-family: Papyrus; color: #63897a; text-align: center; background-color: #a0dec5}")
 
+# f = open("y1_playground.html", "w")
+# f.write(html)
+# f.close()
 
+# webbrowser.open("y1_playground.html")
 
 def aufgabe_2_3(html_page: str):
 
@@ -136,10 +147,8 @@ def aufgabe_3_1(n: int):
         result = 2**i
         print(f"Potenz{i}:\t2^{i}\t{result}")
 
-
-
 def aufgabe_3_2(n: int):
-    # return n & (n - 1) == 0 # Profi-Antwort
+    # print(n & (n - 1) == 0) # Profi-Antwort
     check = False
     for i in range(1,n+1):
         if 2**i == n:
@@ -149,8 +158,6 @@ def aufgabe_3_2(n: int):
         print(f"Bei {n} handelt es sich um eine PoT-Zahl.")
     else:
         print(f"{n} ist keine PoT-Zahl.")
-
-
 
 def aufgabe_3_3(string):
     w_string = ""
@@ -171,8 +178,6 @@ def aufgabe_3_3(string):
     
     n_string.reverse()
     return "".join(n_string)
-
-
 
 def aufgabe_3_4():
     import random as r

@@ -1,6 +1,6 @@
 ### Dateibearbeitung ###
-with open("z1_todo.txt") as file:
-    print(file.read())
+# with open("z1_todo.txt") as file:
+#     print(file.read())
 
 
 

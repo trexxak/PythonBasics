@@ -10,8 +10,8 @@ also: 2, 4, 8, 16, 32, 64, 128 etc.
 
 """
 def aufgabe_3_1(n: int):
-    pass
-
+    for i in range(1,n+1):
+        print(2**i)
 
 
 """
@@ -36,7 +36,16 @@ austauscht, und den letzten Konsonanten des Strings mit "g".
 
 """
 def aufgabe_3_3(string):
-    return True
+    resultat = ""
+    for char in string:
+        if char in "aeoiu":
+            resultat += "o"
+        else:
+            resultat += char
+    # for vokal in ["e","a","i","o","u"]:
+    #     resultat = string.replace(vokal,"o")
+    print(resultat)
+
 
 
 

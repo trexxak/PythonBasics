@@ -33,9 +33,12 @@ Python erlaubt, neben speziellen Fällen, folgende primitive Datentypen:
 """
 def get_data():
     name = input("Name: ")
-    age = int(input("Alter: "))
-    is_of_legal_age = False if age < 18 else True
-    data = {"Name": name, "Volljährig": is_of_legal_age}
+    age = int(input("Alter: ")) # Casting um die Eingabe in eine Ganzzahl zu casten
+    if age < 18:
+        is_of_legal_age = False
+    else:
+        is_of_legal_age = True
+    data = {"Name": name, "Volljährig": is_of_legal_age} # Wörterbuch - Key: Value Paare
     return data
 
 
@@ -94,6 +97,10 @@ Nützliche math-Methoden:
     * math.fsum(collection)     gibt die Summe aller Zahlen einer Collection zurück.
     * math.gcd(zahl1, zahl2)    gibt den kleinsten gemeinsamen Nenner zweier Ganzzahlen zurück.
     
+Mehr zum math-Modul: 
+
+    https://docs.python.org/3/library/math.html
+    
 """
 def more_math():
     import math
@@ -115,10 +122,15 @@ Merkmale:
 
     * Strings werden durch "" oder '' markiert 
         (jedoch nicht gemischt - "string' wird nicht erkannt).
+
     * Strings in Python sind implizit Abfolgen einzelner Zeichen, 
         die jedoch ebenfalls als String gespeichert sind.
+
     * Verbatim Strings können durch dreifache doppelte Anführungszeichen markiert werden. 
+        sie werden in Python auch "docstrings" genannt.
+
     * Verkettung zwischen Strings erfolgt durch den '+'-Operator.
+
     * Strings können entweder durch die "format()"-Methode oder 
         durch f-String formatiert werden.
 
@@ -182,7 +194,6 @@ def verbatim_string():
     ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;:cllc:;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
     """
-    print(ascii_art)
 
 def formatted_string():
     string_1 = "Bello"
@@ -271,8 +282,6 @@ def escape_sequences():
     print("C:\\Users\\Admin\\FilmQuotes\\TheRoom_2003.mp4\b\b\b\b.avi")
     print("Tommy: \"Ha\tha\tha\tha. \n\tWhat \ta \tstory \tMark!\"")
 
-
-
 ## Logische Werte ## 
 """
 
@@ -296,3 +305,11 @@ def check_bool_value(parameter):
         return False
     elif argument is None:
         return None
+
+"""
+
+"None" ist ein spezieller Datentyp in Python, der zur Darstellung von Abwesenheit 
+oder Nichts verwendet wird. Er wird häufig als Rückgabewert einer Funktion verwendet, 
+um anzuzeigen, dass die Funktion keine Ergebnisse liefert. 
+
+"""

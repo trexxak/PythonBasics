@@ -2,7 +2,6 @@
 even_numbers = [x for x in range(1,101) if x % 2 == 0]
 
 
-
 ## Übersicht ##
 """
 
@@ -85,7 +84,6 @@ def character_sheet():
 
     else:
         print("Your name is occupied. Please select another name.")
-
 
 
 ## Ordnung, Index, Veränderbarkeit und Redundanztoleranz ##
@@ -206,6 +204,8 @@ def duplicates_in_collections():
     string_example = "ananas"
     print(string_example)
 
+duplicates_in_collections()
+
 
 
 ## Listen ##
@@ -246,7 +246,6 @@ def list_functions(list_length: int):
     print(list_a)
 
 
-
 ## Tupel ##
 """
 
@@ -263,7 +262,6 @@ def tuple_functions(*tuple_a):
     [print(item) for item in tuple_a]
     print(tuple_a)
     print(f"42 kommt im angegebenen Tupel {tuple_a.count(42)} mal vor.")
-
 
 
 ## Sets ##
@@ -291,7 +289,6 @@ def set_functions(set_a = {1,2,3,4,5}, set_b = {3,4,5,6,7}):
     unique_elements = set_a.symmetric_difference(set_b)
     intersecting_elements = set_a.intersection(set_b)
     print(all_elements, "\n", unique_elements, "\n", intersecting_elements)
-
 
 
 ## Wörterbücher ##

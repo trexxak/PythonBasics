@@ -14,10 +14,9 @@ def diamond():
         pass
         # t_year = Teacher.year
         # s_year = Student.year
-        # h_year = Human.year
+        # year = Human.year
     
     print(Markus.year)
-
 
 
 ## Aufbau ##

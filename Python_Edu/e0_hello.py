@@ -42,13 +42,20 @@ def aufgabe_0_2():
 
 """
 
-Aufgabe 3 (~15 Minuten):
-Was würde Sie besonders interessieren mit Python zu schreiben? 
-Finden Sie im Internet das dafür notwendige Modul, 
-importieren Sie es und schreiben Sie ein Minimalprogramm.
-(ein sogenanntes "Hello World").
+Aufgabe 3 (~10 Minuten):
+Welche Anwendungen fallen Ihnen ein, bei denen Python nützlich sein könnte? 
+Schreiben Sie eine Liste mit mindestens 5 Anwendungen auf und notieren Sie kurz, 
+warum Python hier eine gute Wahl wäre.
 
 """
 def aufgabe_0_3():
-    import random # Ändern Sie "random" zu Ihrem gewünschten Modulnamen
-    print(f"Du würfelst: {random.randint(1,6)}") # Ändern Sie den Code um das gewünsche Modul zu demonstrieren
+    anwendungen = {
+        "anwendung 1": "begruendung 1",
+        "anwendung 2": "begruendung 2",
+        "anwendung 3": "begruendung 3",
+        "anwendung 4": "begruendung 4",
+        "anwendung 5": "begruendung 5"
+    }
+
+    for anwendung, begruendung in anwendungen.items():
+        print(f"{anwendung}: {begruendung}")

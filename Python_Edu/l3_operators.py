@@ -2,7 +2,6 @@
 operator_chain = 1 < 2 < 3 < 4 < 5 > 4 > 3 > 2 > 1 >= 0 <= 1
 
 
-
 ## Arithmetische Operatoren ##
 """
 
@@ -15,6 +14,8 @@ operator_chain = 1 < 2 < 3 < 4 < 5 > 4 > 3 > 2 > 1 >= 0 <= 1
     //  "Floor Division" (NICHT Wurzel!) (Ganzzahlteilung)
 
 """
+
+
 def calculus(zahl_1, zahl_2, operator):
     match operator:
         case "*":
@@ -46,11 +47,11 @@ def calculus(zahl_1, zahl_2, operator):
     x /= 4      weist der Variable ihren um den rechten Wert dividierten Wert zu.
     x %= 5      weist der Variable ihren um den rechten Wert modulierten Wert zu.
     x **= 6     weist der Variable ihren um den rechten Wert potenzierten Wert zu.
-    x //= 7     weist der Variable ihren um den rechten Wert bodengeteilten Wert zu.
+    x //= 7     Zuweisung mit "Floor Division".
 
 """
 def count_up_then_down():
-    for i in range(0,10000):
+    for i in range(0,10000,1):
         if i < 10000:
             i+=1
         print(i)
@@ -58,7 +59,6 @@ def count_up_then_down():
         if j > 0:
             j-=1
         print(j)
-
 
 
 ## Vergleichsoperatoren ##
@@ -133,16 +133,57 @@ def numbered_list(itemlist = ["Collect underpants", "?", "Profit"]):
 ## Bitwise Operatoren ##
 """
 
-    &   AND     Setzt jeden Bit auf 1, wenn beide Bits 1 sind.
+    Bitwise-Operatoren werden verwendet, um auf den Bitmuster von Ganzzahlen zu arbeiten. 
+    Es gibt sechs Bitwise-Operatoren in Python:
 
-    |   OR      Setzt jeden Bit auf 1, wenn mindestens ein Bit 1 ist.
+        &   AND         Setzt jeden Bit auf 1, wenn beide Bits 1 sind.
 
-    ^   XOR     Setzt jeden Bit auf 1, wenn NUR ein Bit 1 ist.
+        |   OR          Setzt jeden Bit auf 1, wenn mindestens ein Bit 1 ist.
+
+        ^   XOR         Setzt jeden Bit auf 1, wenn NUR ein Bit 1 ist.
+        
+        ~   NOT         Invertiert alle Bits
+
+        <<  Left Shift  Verschiebt Bits nach links um eine bestimmte Anzahl von Stellen.
+        
+        >>  Right Shift Verschiebt Bits nach rechts um eine bestimmte Anzahl von Stellen.
+
+    Bitwise-Operatoren werden häufig in eingebetteten Systemen und
+    Treiberprogrammen verwendet, da sie schnell sind und auf der Hardwareebene arbeiten.
     
-    ~   NOT     Invertiert alle Bits
-
-    <<  Left Shift
-    
-    >>  Right Shift
+    Für die meisten Anwendungen sind Bitwise-Operatoren nicht erforderlich. Auch Python 
+    verwendet nur selten Bitwise-Operatoren.
 
 """
+
+def bitwise_operations():
+
+    print("\n AND Setzt jeden Bit auf 1, wenn beide Bits 1 sind.")
+    print(0 & 0)
+    print(0 & 1)
+    print(1 & 0)
+    print(1 & 1)
+
+    print("\n OR Setzt jeden Bit auf 1, wenn mindestens ein Bit 1 ist.")
+    print(0 | 0)
+    print(0 | 1)
+    print(1 | 0)
+    print(1 | 1)
+
+    print("\n XOR Setzt jeden Bit auf 1, wenn NUR ein Bit 1 ist")
+    print(0 ^ 0)
+    print(0 ^ 1)
+    print(1 ^ 0)
+    print(1 ^ 1)
+
+    print("\n NOT Invertiert alle Bits")
+    print(~0)
+    print(~1)
+
+    print("\n Left Shift Verschiebt Bits nach links um eine bestimmte Anzahl von Stellen.")
+    print(0 << 1)
+    print(1 << 1)
+
+    print("\n Right Shift Verschiebt Bits nach rechts um eine bestimmte Anzahl von Stellen.")
+    print(0 >> 1)
+    print(1 >> 1)

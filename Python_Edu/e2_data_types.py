@@ -7,7 +7,7 @@ Geben Sie die einzelnen Zeichen eines beliebigen Strings aus
 ohne Escape-Sequenzen zu verwenden.
 
 """
-def aufgabe_2_1():    
+def aufgabe_2_1(input: str = "Hallo Welt!"):    
     pass
 
 
@@ -28,7 +28,7 @@ Also:
             <body>
                 <h1>Überschrift</h1>
                 <p>Lorem Ipsum</p>
-                <img src="testpixel"/>
+                <img src="testpixel.png"/>
             </body>
         </html>
 
@@ -40,18 +40,40 @@ Dreifach-Bonus: Fügen Sie beliebig viele weitere Parameter ein um CSS-Stileleme
 
 
 """
-def aufgabe_2_2(title, heading, paragraph): 
-    full_html = "<h1>Hallo</h1>"
-    return full_html
+def aufgabe_2_2(title:str, heading:str, paragraph:str): 
+    full_html = f"""<!DOCTYPE html>
+    
+    </html>
+    """
 
+    return full_html
 
 
 """
 
 Aufgabe 3 (~15 Minuten):
-Schreiben Sie einen HTML-Parser, der die eingebundenen Bilder einer HTML-Seite in einer Liste
-zurückgibt.
+Schreiben Sie einen HTML-Parser, der die eingebundenen Bilder einer einfachen HTML-Seite in 
+einer Liste zurückgibt.
 
 """
-def aufgabe_2_3(html_page):    
-    pass
+
+def aufgabe_2_3(html_page:str):   
+
+    pictures = [] 
+    print(pictures)
+
+
+beispiel_html = """
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meine Webseite :)</title>
+</head>
+<body>
+<h1>Ja was ist das denn?</h1>
+<img src="https://via.placeholder.com/1920x1080.png">
+<p>Das ist ein Test! Ui!</p>
+</body>
+</html>
+"""
+

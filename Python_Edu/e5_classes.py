@@ -1,5 +1,4 @@
 ### Python Aufgaben zu Lektion 5 - Klassen ###
-
 """
 
 Aufgabe 1 (~5 Minuten):

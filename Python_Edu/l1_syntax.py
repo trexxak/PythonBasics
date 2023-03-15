@@ -1,6 +1,6 @@
 ### Python Syntax ###
 def do_nothing(): 
-    pass
+    pass # "pass" ist ein Platzhalter, der nichts tut, aber syntaktisch korrekt ist!
 
 
 
@@ -8,11 +8,15 @@ def do_nothing():
 """
 
 Das markanteste Feature der Python-Skriptsprache ist wohl der komplette Wegfall
-von Semikolons als "End of Line"-Symbol.
+von Semikolons als "End of Line"-Symbol. 
 
 Funktionale Ebenen innerhalb des Codes werden durch Indents (Einrückungen) markiert. 
 
 """
+
+# ACHTUNG! Einrückungen sind nicht optional! Bitte daran denken! Einrückungen sind für Python 
+# essentiell und werden auch von der Ausführung des Codes berücksichtigt! Bitte daran denken!
+
 def indents():
     eingabe = input("Bitte geben Sie keine Vollzahl ein: ")
     if eingabe.isdigit() is False:
@@ -26,7 +30,9 @@ def indents():
         for j in range(3):
             print()
 
-
+# Weiterhin: Immer dieselbe Einrückung (Tab- oder Space-Anzahl) verwenden! Bitte daran denken! 
+# Bitte!
+# Bitte daran denken! Bitte daran denken! Bitte denken Sie daran! Bitte daran denken!
 
 ## Variablen ##
 """
@@ -79,7 +85,6 @@ def casting(f = "42"):
     return [f,u,n]
 
 
-
 ## Namenskonventionen ##
 """
 
@@ -89,6 +94,10 @@ Folgende Namenskonventionen sind für Python üblich:
     * snake_case                Variablen, Funktionen, Methoden, Module
     * SCREAMING_SNAKE_CASE      Konstante
 
+Diese Namenskonventionen haben ihren Ursprung in der PEP 8, der Python Style Guide:
+    
+    https://www.python.org/dev/peps/pep-0008/
+    
 """
 def naming():
     import y0_this_is_my_module
