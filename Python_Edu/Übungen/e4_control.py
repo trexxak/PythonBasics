@@ -10,12 +10,9 @@ input: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 output: 30 (2+4+6+8+10)
 
 """
-def aufgabe_z_1(list_of_numbers):
-    sum_of_evens = 0
-    for num in list_of_numbers:
-        if num % 2 == 0:
-            sum_of_evens += num
-            return sum_of_evens
+def aufgabe_4_1(list_of_numbers):
+    pass
+        
 
 """
 Aufgabe 2 (~15 Minuten):
@@ -24,10 +21,9 @@ alle Strings ausgibt, die mindestens 5 Zeichen lang sind.
 
 Beispiel:
 input: ["Hallo", "Welt", "Python", "Programmieren", "ist", "toll"]
-output: "Hallo" und "Programmieren"
+output: "Hallo", "Python" und "Programmieren"
 
 """
-def aufgabe_1_2(list_of_strings):
-    for string in list_of_strings:
-        if len(string) >= 5:
-            print(string)
+def aufgabe_4_2(list_of_strings):
+    pass
+

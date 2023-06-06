@@ -26,7 +26,6 @@ def control_structures_example():
         print("Die Zahl ist kleiner als 10.")
     else:
         print("Die Zahl ist 10.")
-    i = 0
 
 ## Funktionen ##
 """
@@ -48,6 +47,7 @@ def sum_numbers(a, b):
 
 def pass_this():
     pass
+
 
 ## Schleifen ##
 """
@@ -71,3 +71,10 @@ def loops_example():
         while i < 10:
             print(i)
             i += 1
+
+list = [0, "auto", 3.3]
+
+
+# foreach
+for item in list:
+    print(item)

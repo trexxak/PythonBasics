@@ -41,13 +41,7 @@ Dreifach-Bonus: Fügen Sie beliebig viele weitere Parameter ein um CSS-Stileleme
 
 """
 def aufgabe_2_2(title:str, heading:str, paragraph:str): 
-    full_html = f"""<!DOCTYPE html>
-    
-    </html>
-    """
-
-    return full_html
-
+    return ""
 
 """
 
@@ -58,22 +52,5 @@ einer Liste zurückgibt.
 """
 
 def aufgabe_2_3(html_page:str):   
-
-    pictures = [] 
-    print(pictures)
-
-
-beispiel_html = """
-<!DOCTYPE html>
-<html>
-<head>
-<title>Meine Webseite :)</title>
-</head>
-<body>
-<h1>Ja was ist das denn?</h1>
-<img src="https://via.placeholder.com/1920x1080.png">
-<p>Das ist ein Test! Ui!</p>
-</body>
-</html>
-"""
+    return ""
 

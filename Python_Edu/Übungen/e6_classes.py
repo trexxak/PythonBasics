@@ -6,7 +6,7 @@ Stellen Sie sich eine einfache Vererbungsbeziehung vor und stellen Sie sie durch
 Einsatz von Klassen abstrakt dar.
 
 """
-def aufgabe_5_1():
+def aufgabe_6_1():
     class Class():
         pass
 
@@ -19,5 +19,5 @@ Stellen Sie die Beziehungen einer Unterrichtssituation dar. Schreiben Sie mindes
 Eigenschaft und eine Methode pro Klasse.
 
 """
-def aufgabe_5_2():
+def aufgabe_6_2():
     pass

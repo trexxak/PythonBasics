@@ -8,7 +8,7 @@ ein Begrüßungsstring (mit Zeit und/ oder Datum) nach Ihrem Geschmack für den 
 generieren.
 
 """
-def aufgabe_6_1():
+def aufgabe_7_1():
     import datetime
     greeting_with_datetime = None
     return print(greeting_with_datetime)
@@ -24,7 +24,7 @@ Je kreativer, desto besser.
 Demonstrieren Sie was Sie am Modul verändert haben anhand der Funktion.
 
 """
-def aufgabe_6_2():
+def aufgabe_7_2():
     import y0_this_is_my_module
     
 
@@ -37,7 +37,7 @@ schreiben Sie ein 2 dimensionales 3x3 Array, das mit Zufallszahlen befüllt ist.
 Wählen Sie zur Verteilung der Zufallszahlen eine ansprechende Normalverteilung.
 
 """
-def aufgabe_6_3():
+def aufgabe_7_3():
     import numpy as np
     random_array = None
     print(random_array)

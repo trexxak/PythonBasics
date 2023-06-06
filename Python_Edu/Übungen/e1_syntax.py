@@ -70,4 +70,4 @@ def aufgabe_1_3():
 
     ### Ausgabe ###
     for i in range(1, len(list_of_numbers)+1):
-        pass
+        pass # <- ersetzen mit FizzBuzz-Funktionalität

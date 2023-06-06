@@ -34,7 +34,7 @@ def what():
 
 Pythons Vorteile beinhalten unter Anderem:
 
-    * Plattformunabhängige Unterstützung
+    * Plattformunabhängige Unterstützung 
     * Einprägsame Syntax, dadurch auch für Anfänger geeignet
     * Schnelle Ausführung des Codes, dadurch schnelles Prototypisieren und Debuggen
     * Keine IDE notwendig

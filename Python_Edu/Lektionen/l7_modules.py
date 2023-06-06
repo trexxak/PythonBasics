@@ -5,7 +5,6 @@ from datetime import *              # importiert ALLES aus dem Modul "datetime".
 from platform import system as plt  # importiert aus dem Modul "platform" die Funktion "system" mit dem Bezeichner "plt".
 
 
-
 ## Built-In Module ##
 """
 
@@ -21,8 +20,6 @@ def builtin_modules():
         open("https://docs.python.org/3/py-modindex.html")
         print(datetime.now().strftime("Today is %A, %d. of %B, %Y.\nYour local time is %H:%M"))
 
-
-
 ## Eigene Module ##
 """
 
@@ -34,6 +31,7 @@ vorliegt. So kann das Skript dann wie ein Modul importiert werden.
 def own_modules():
     import y0_this_is_my_module            
     y0_this_is_my_module.dummy_function()
+    y0_this_is_my_module
 
 
 
@@ -49,7 +47,7 @@ Dies geschieht über die Shell/ Bash über den Befehl:
 Das Paket wird (wenn nicht virtuelle Umgebungen verwendet werden) im Directory 
 "/lib/site-packages" des Python Ordners gespeichert.              
 
-#py -m pip install -> workaround
+py -m pip install -> workaround
 """
 def external_modules():
     import numpy as np

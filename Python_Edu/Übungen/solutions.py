@@ -12,6 +12,8 @@ def aufgabe_0_1():
 
     return f"Gründe mehr als nur eine Programmiersprache zu lernen:\n\t*{stichwort_1}\n\t*{stichwort_2}\n\t*{stichwort_3}\n\t*{stichwort_4}\n\t*{stichwort_5}\n\n"
 
+
+
 def aufgabe_0_2():
 
     unterschied_1 = "Python lässt sich mit weniger Aufwand schreiben"
@@ -29,6 +31,8 @@ def aufgabe_0_2():
         antwort += f"\tGrund {i+1}: "+gruende_unterschied_2[i]+"\n"
 
     return antwort
+
+
 
 def aufgabe_0_3():
     anwendungen = {
@@ -53,6 +57,8 @@ def aufgabe_1_1():
     my_name = input("Geben Sie Ihren Namen ein:\t")
     print("Hello " + my_name)
 
+
+
 def aufgabe_1_2(variable: int):
     MY_CONSTANT = 3.177
     my_variable = variable
@@ -61,6 +67,8 @@ def aufgabe_1_2(variable: int):
     else:
         my_bool = False
     print(my_bool)
+
+
 
 def aufgabe_1_3():
 
@@ -80,11 +88,12 @@ def aufgabe_1_3():
 
 
 
-
 def aufgabe_2_1(string):
     my_string = string
     for char in my_string:
         print(char)
+
+
 
 def aufgabe_2_2(title, heading, paragraph, list, image_url, *style):
     
@@ -147,6 +156,8 @@ def aufgabe_3_1(n: int):
         result = 2**i
         print(f"Potenz{i}:\t2^{i}\t{result}")
 
+
+
 def aufgabe_3_2(n: int):
     # print(n & (n - 1) == 0) # Profi-Antwort
     check = False
@@ -158,6 +169,8 @@ def aufgabe_3_2(n: int):
         print(f"Bei {n} handelt es sich um eine PoT-Zahl.")
     else:
         print(f"{n} ist keine PoT-Zahl.")
+
+
 
 def aufgabe_3_3(string):
     w_string = ""
@@ -178,6 +191,8 @@ def aufgabe_3_3(string):
     
     n_string.reverse()
     return "".join(n_string)
+
+
 
 def aufgabe_3_4():
     import random as r
@@ -203,7 +218,24 @@ def aufgabe_3_4():
 
 
 
-def aufgabe_4_1(**kwargs):
+def aufgabe_4_1(list_of_numbers):
+    sum_of_evens = 0
+    for num in list_of_numbers:
+        if num % 2 == 0:
+            sum_of_evens += num
+    return sum_of_evens
+
+
+
+def aufgabe_4_2(list_of_strings):
+    input = ["Hallo", "Welt", "Python", "Programmieren", "ist", "toll"]
+    for string in list_of_strings:
+        if len(string) >= 5:
+            print(string)
+
+
+
+def aufgabe_5_1(**kwargs):
     [kwargs.update({f"{i} + {i} =": i+i}) if i % 2 == 0 else kwargs.update({f"{i} - {i} =": i*-i}) for i in range(10)]
     antwort = """ 
     Für Index i von 0 - 10, füge dem Wörterbuch den Schlüssel "i + i =" mit dem Wert "i+i" hinzu, wenn es sich bei
@@ -223,7 +255,7 @@ def aufgabe_4_1(**kwargs):
 
 
 
-def aufgabe_4_2():
+def aufgabe_5_2():
     o = {
         "A":
         {
@@ -313,7 +345,7 @@ def aufgabe_4_2():
 
 
 
-def aufgabe_4_3(own_position: tuple = (1,1), free_spaces: tuple = ((0,1),(1,1),(1,2),(1,3),(2,3),(3,3),(3,2),(3,1),(3,0))):
+def aufgabe_5_3(own_position: tuple = (1,1), free_spaces: tuple = ((0,1),(1,1),(1,2),(1,3),(2,3),(3,3),(3,2),(3,1),(3,0))):
     map = {}
     for i in range(5):
         map.update({f"row {i+1}": []})
@@ -338,7 +370,7 @@ def aufgabe_4_3(own_position: tuple = (1,1), free_spaces: tuple = ((0,1),(1,1),(
 
 
 
-def aufgabe_5_1():
+def aufgabe_6_1():
     class Hund:
         pass
     class Dackel(Hund):
@@ -347,7 +379,7 @@ def aufgabe_5_1():
 
 
 
-def aufgabe_5_2():
+def aufgabe_6_2():
 
     class Person():
         def __init__(self, name: str, alter: int):
@@ -415,34 +447,34 @@ def aufgabe_5_2():
 
 
 
-def aufgabe_6_1():
+def aufgabe_7_1():
     import datetime
-    greeting_with_datetime = datetime.now().strftime("Today is %A, %d. of %B, %Y.\nYour local time is %H:%M")
+    greeting_with_datetime = datetime.datetime.now().strftime("Today is %A, %d. of %B, %Y.\nYour local time is %H:%M")
     return print(greeting_with_datetime)
 
 
 
-def aufgabe_6_2():
+def aufgabe_7_2():
     import y0_this_is_my_module
     y0_this_is_my_module.dummy_function()
 
 
 
-def aufgabe_6_3():
+def aufgabe_7_3():
     import numpy as np
     random_array = np.random.normal(10,5,(3,3)).astype(int)
     print(random_array)
 
 
 
-def aufgabe_7_1():
+def aufgabe_8_1():
     encoded_text = "ohssvcvthuklyluluklklzbualyypjoazwyvglzzlzpjozpagloplybukklurlblilyilzvuklyzkbttlalealuhjopjoohiltpynlmblosaqlklusvyltpwzbtnlulyhavyptulaghunlzjohbabukipugbtzjosbzznlrvttlukhzzpjokvjosplilyzlsizalpulubuzpuuzaleazjoylpil"
     with open("y2_playground.txt","w") as file:
         file.write(encoded_text)
 
 
 
-def aufgabe_7_2():
+def aufgabe_8_2():
     counter = 0
     changed_string = ""
 
@@ -460,7 +492,7 @@ def aufgabe_7_2():
 
 
 
-def aufgabe_7_3():
+def aufgabe_8_3():
     with open("y2_playground.txt","r") as file:
         string_to_change = file.read()
     temp_string = string_to_change.replace(" ","")

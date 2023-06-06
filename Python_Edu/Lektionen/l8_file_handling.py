@@ -1,6 +1,6 @@
 ### Dateibearbeitung ###
-# with open("z1_todo.txt") as file:
-#     print(file.read())
+with open("z1_todo.txt") as file:
+    print(file.read())
 
 
 
@@ -25,6 +25,7 @@ Um ein Dokument zu löschen muss das "os"-Modul importiert und seine remove() Fu
 ausgeführt werden. 
 
 """
+
 def read_and_return(doc) -> str:
     f = open(doc)
     string = f.read()

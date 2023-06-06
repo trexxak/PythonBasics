@@ -7,8 +7,10 @@ Lesen Sie die erste Zeile der Funktion aufmerksam durch, führen Sie sie aus, un
 Sie ihre Interpretation des Codes der Variable "antwort" zu.
 
 """
-def aufgabe_4_1(**kwargs):
+def aufgabe_5_1(**kwargs):
     [kwargs.update({f"{i} + {i} =": i+i}) if i % 2 == 0 else kwargs.update({f"{i} * -{i} =": i*-i}) for i in range(10)]
+    
+    
     antwort = """  """
     print(antwort)
     return kwargs
@@ -22,7 +24,7 @@ Geben sie "MARZIPAN" nur durch Aneinanderreihung der "s"-Werte,
 und "MACHWERK" nur durch Aneinanderreihung der "t"-Werte aus.
 
 """
-def aufgabe_4_2():
+def aufgabe_5_2():
     o = {
         "A":
         {
@@ -110,7 +112,7 @@ Beispiel für die Ausgabe:
     xxxxx
 
 """
-def aufgabe_4_3(own_position: tuple = (1,1), free_spaces: tuple = ((0,1),(1,1),(1,2),(1,3),(2,3),(3,3),(3,2),(3,1),(3,0))):
+def aufgabe_5_3(own_position: tuple = (1,1), free_spaces: tuple = ((0,1),(1,1),(1,2),(1,3),(2,3),(3,3),(3,2),(3,1),(3,0))):
     map = {}
     display = ""
     print(display)

@@ -27,7 +27,7 @@ In aller Kürze:
 
 Collection      Liste[]     Tupel()     Set{}       Dict{}      String
 
-geordnet?           Ja          Ja      Nein           *Ja          Ja
+geordnet?           Ja          Ja      Nein            Ja          Ja
 indiziert?          Ja          Ja      Nein     Schlüssel          Ja
 veränderbar?        Ja        Nein      Nein            Ja        Nein
 doppelte Werte?     Ja          Ja      Nein          Nein          Ja
@@ -131,6 +131,7 @@ Bis auf die Liste und das Dictionary, sind einzelne Elemente innerhalb der Aufz�
 Aufnahme nicht mehr veränderbar.
 
 """
+
 def change_collections(data = collections()):
     tuple_example = ("Winston", "Smith", 52, True)
     list_example = ["Josef", "K.", 46, False]
@@ -139,34 +140,35 @@ def change_collections(data = collections()):
     string_example = "ABCDEFGHIJKLMNOPQURSTUVWXYZ0123456789"
 
     # TUPLE
-    #tuple_example[1] = "Lauch"                 # Tupel unveränderbar!
-    workaround_list = list(tuple_example)       # Workaround -> Tupel zu Liste casten
-    workaround_list[1] = "Lauch"                # Element ändern
-    tuple_example = tuple(workaround_list)      # Liste zu Tupel casten
-    print(tuple_example[1])
+    # tuple_example[1] = "Lauch"                 # Tupel unveränderbar!
+    # workaround_list = list(tuple_example)       # Workaround -> Tupel zu Liste casten
+    # workaround_list[1] = "Lauch"                # Element ändern
+    # tuple_example = tuple(workaround_list)      # Liste zu Tupel casten
+    # print(tuple_example[1])
     
-    # LISTE
-    list_example[1] = "Lauch"
-    print(list_example[1])
+    # # LISTE
+    # list_example[1] = "Lauch"
+    # print(list_example[1])
 
-    # SET
-    #set_example[1] = "Lauch"                   # nicht geordnet!
-    set_example.remove("Faust")                 # Workaround: 
-    set_example.add("Lauch")                    # Entfernen des alten Werts und 
-    print(set_example)                          # Hinzufügen des Neuen.
+    # # SET
+    # set_example[1] = "Lauch"                   # nicht geordnet!
+    # set_example.remove("Faust")                 # Workaround: 
+    # set_example.add("Lauch")                    # Entfernen des alten Werts und 
+    # print(set_example)                          # Hinzufügen des Neuen.
 
-    # DICT
-    dict_example["Nachname"] = "Lauch"
-    print(dict_example["Nachname"])
+    # # DICT
+    # dict_example["Nachname"] = "Lauch"
+    # print(dict_example["Nachname"])
 
-    # STRING
-    #string_example[1] = "L"                       # String unveränderbar!
-    workaround_string = string_example[0]          # Workaround: Erstellung eines neuen Strings
-    workaround_string += "L"
-    for i in range(2,len(string_example)):
-        workaround_string += string_example[i]
-    string_example = workaround_string
-    print(string_example[1])
+    # # STRING
+    # string_example[1] = "L"                       # String unveränderbar!
+    # workaround_string = string_example[0]          # Workaround: Erstellung eines neuen Strings
+    # workaround_string += "L"
+    # for i in range(2,len(string_example)):
+    #     workaround_string += string_example[i]
+    # string_example = workaround_string
+    # print(string_example[0])
+
 
 """
 
@@ -203,9 +205,6 @@ def duplicates_in_collections():
     # STRING
     string_example = "ananas"
     print(string_example)
-
-duplicates_in_collections()
-
 
 
 ## Listen ##
@@ -304,6 +303,22 @@ dict_a.pop("key")                       entfernt den Schlüssel (und zugehörige
 dict_a.clear()                          entfernt alle Schlüssel (und zugehörige Werte) aus dem Wörterbuch.
 
 """
-def dict_functions(dict_length=4,**dict_a):
-    [dict_a.update({f"{i} hoch {i}": i**i}) for i in range(1,dict_length+1)]
-    [print(f"{key} = {dict_a[key]}") for key in dict_a.keys()]
+
+def dict_functions(dict_length=4,**kwargs): 
+     dict_a = kwargs
+    #  [dict_a.update({f"{i} hoch {i}": i**i}) for i in range(1,dict_length+1)] # List Comprehension
+     for i in range(1,dict_length+1):
+         dict_a.update({f"{i} hoch {i}": i**i}) 
+     for key in dict_a.keys():
+         print(f"{key} = {dict_a[key]}")
+
+# dict_functions(8,a="b",cat=49.3)
+
+def sum_numbers(*args):
+    total = 0
+    for number in args:
+        total += number
+    print(f"Die Summe der Zahlen ist: {total}")
+
+sum_numbers(1,8,68,9,778,546,123)
+

@@ -42,7 +42,6 @@ def get_data():
     return data
 
 
-
 ## Zahlen ##
 """
 
@@ -64,6 +63,7 @@ def calculate_damage(base_damage: int, damage_modifier: float, crit_chance: floa
     else:
         return buffed_damage
 
+
 """
 
 Es lässt sich eine Gleitkommazahl in eine Ganzzahl casten und umgekehrt.
@@ -75,14 +75,16 @@ Komplexe Zahlen lassen sich jedoch nicht (ohne Weiteres) in einen anderen Zahlen
 def casting_works():
     print(int(1.337), float(42), complex(1.337), complex(42))
 
+
 def casting_fails():
     print(int(4j+4), float(4j+4))
+
 
 """
 
 Das math-Modul bietet einige erweiterte mathematische Methoden und mathematische Konstanten:
 
-Konstanten:
+Mathematische Konstanten:
 
     * math.pi       Kreiszahl Pi        float
     * math.tau      Tau (2 * Pi)        float
@@ -115,6 +117,7 @@ def more_math():
     print(f"Alle Zahlen in {constants} aufsummiert ist:\n{math.fsum(constants)}")
     print(f"Der kleinste gemeinsame Nenner von {numbers[0]} und {numbers[1]} ist:\n{math.gcd(numbers[0],numbers[1])}")
 
+
 ## Strings ##
 """
 
@@ -140,8 +143,9 @@ def vertical_string(string: str = "What is the airspeed velocity of an unladen '
     for char in my_string:
         print(char)
 
+
 def verbatim_string():
-    ascii_art = """
+    return """
     ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
     ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
     ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;,,;;;;;;;;;;;;;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -195,6 +199,7 @@ def verbatim_string():
 
     """
 
+
 def formatted_string():
     string_1 = "Bello"
     string_2 = "bellt"
@@ -205,10 +210,12 @@ def formatted_string():
 
     print(format_a + " " + format_b + " " + format_c)
 
+
 def formatted_number_string(zahl):
     with_decimals = f"{zahl:.2f}"
     as_percentage = f"{zahl:.0%}"
     print(zahl, with_decimals, as_percentage)
+
 
 """
 
@@ -247,7 +254,7 @@ def string_methods():
     target_list = []
 
     original_string = "He's not pining, he's passed on. This parrot is no more. He has ceased to be. He's expired and gone to meet his maker. He's a stiff, bereft of life, he rests in peace. If you hadn't have nailed him to the perch he'd be pushing up the daisies. He's rung down the curtain and joined the choir invisible. This is an ex-parrot."
-    string_in_uppercase = original_string.upper()
+    string_in_uppercase = original_string.upper() # String in CAPSLOCK
     modified_string = string_in_uppercase.replace("HE", "ARTHAS")
     modified_string = modified_string.replace("PARROT", "ARTHAS")
     string_list = modified_string.split(".")
@@ -259,6 +266,7 @@ def string_methods():
     for i in range(len(target_list)-1,0,-1):
         target_string += target_list[i] + "\n"
     print(target_string.lower())
+
 
 """
 
@@ -281,6 +289,7 @@ Escape-Sequenzen möglich:
 def escape_sequences():
     print("C:\\Users\\Admin\\FilmQuotes\\TheRoom_2003.mp4\b\b\b\b.avi")
     print("Tommy: \"Ha\tha\tha\tha. \n\tWhat \ta \tstory \tMark!\"")
+
 
 ## Logische Werte ## 
 """
@@ -305,6 +314,7 @@ def check_bool_value(parameter):
         return False
     elif argument is None:
         return None
+
 
 """
 

@@ -11,10 +11,10 @@ def diamond():
         year = 2018
 
     class Markus(Teacher, Student):
-        pass
-        # t_year = Teacher.year
-        # s_year = Student.year
-        # year = Human.year
+        # pass
+        t_year = Teacher.year
+        s_year = Student.year
+        year = Human.year
     
     print(Markus.year)
 
@@ -53,6 +53,8 @@ def classes():
             self.name = name
             self.pos = position
             self.player = is_player
+
+
     def instancing_objects():
         enemy_1 = Entity("Ghost",(0,8))
         enemy_2 = Entity("Slime",(4,-4))
@@ -128,6 +130,7 @@ def inheritance():
         def __init__(self,name,pos,target):
             super().__init__(name,pos,target)
             self.stock = ("expensive trash",.2)
+
         def trades(self):
             print(f"{self.name} offers you to trade {self.stock[0]} for {self.stock[1]} Gold!")
 
@@ -147,6 +150,7 @@ def inheritance():
         bunny = Other("Fips",1,"Kräuter")
         npc_0 = Friendly("Fantastico",2,bunny)
         player_0 = Player("Mochog",0,None,10,10,10)
+        player_1 = Player("Paul",78,player_0,70,8,4)
         npc_1 = Hostile("Toaster",3,player_0,10,10)
 
         run = True

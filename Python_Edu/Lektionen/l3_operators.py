@@ -1,7 +1,6 @@
 ### Python Operatoren ###
 operator_chain = 1 < 2 < 3 < 4 < 5 > 4 > 3 > 2 > 1 >= 0 <= 1
 
-
 ## Arithmetische Operatoren ##
 """
 
@@ -10,13 +9,13 @@ operator_chain = 1 < 2 < 3 < 4 < 5 > 4 > 3 > 2 > 1 >= 0 <= 1
     *   Multiplikation
     /   Division (wie immer mit Vorsicht zu genießen!)
     %   Modulo
-    **  Exponential
+    **  Exponential (NICHT ^!) 
     //  "Floor Division" (NICHT Wurzel!) (Ganzzahlteilung)
 
 """
 
 
-def calculus(zahl_1, zahl_2, operator):
+def calculus(zahl_1:int, operator:str, zahl_2:int): 
     match operator:
         case "*":
             return zahl_1 * zahl_2
@@ -34,7 +33,6 @@ def calculus(zahl_1, zahl_2, operator):
             return zahl_1 % zahl_2
         case _:
             return f"{operator} ist kein arithmetischer Operator."
-
 
 
 ## Zuweisungsoperatoren ##
@@ -91,9 +89,8 @@ def reality_check():
     not     ist wahr, wenn die Aussage falsch ist.
 
 """
-def collision_detection(entity_position = {"x": 0, "y": 0}, wall_position = {"x": 16, "y": 0}):
-    if entity_position["x"] == wall_position["x"] \
-    and entity_position["y"] == wall_position["y"]:
+def collision_detection(entity_position = {"x": 16, "y": 0}, wall_position = {"x": 16, "y": 0}):
+    if entity_position["x"] == wall_position["x"] and entity_position["y"] == wall_position["y"]:
         return True
     else: 
         return False
@@ -111,8 +108,7 @@ def collision_detection(entity_position = {"x": 0, "y": 0}, wall_position = {"x"
 """
 def collision_handler(entity_is_ghost = True):
     if collision_detection() is True and entity_is_ghost is not False:
-        return print("collision method (nyi)")
-
+        print("collision method (nyi)")
 
 
 ## Zugehörigkeitsoperatoren ##
